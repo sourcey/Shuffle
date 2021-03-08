@@ -9,8 +9,8 @@ export default () => {
   e.style.cssText = 'width:10px;padding:2px;box-sizing:border-box;';
   element.appendChild(e);
 
-  value = window.getComputedStyle(e, null).width === '10px';
-  
+  value = Math.round(getNumber(window.getComputedStyle(e, null).width)) === 10;
+
   element.removeChild(e);
 
   return value;

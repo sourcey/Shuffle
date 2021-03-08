@@ -10,7 +10,7 @@ export default () => {
   element.appendChild(e);
 
   value = window.getComputedStyle(e, null).width === '10px';
-
+  
   element.removeChild(e);
 
   return value;
